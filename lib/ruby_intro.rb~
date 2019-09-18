@@ -78,8 +78,6 @@ end
 def binary_multiple_of_4? s
   # YOUR CODE HERE
   return true if (s=="0")
-  # A binary multiple of 4 ends in 00
-  # This regex looks for any number of 0's or 1's, ended by 00
   c = /^[10]*00$/.match(s)
   if c==nil
 	return false
